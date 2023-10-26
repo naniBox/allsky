@@ -215,18 +215,11 @@
 				"style": ""
 			},
 			{
-				"display": true,
-				"label": "Website Version",
-				"icon": "fa fa-fw fa-file-alt",
-				"variable": "AllskyWebsiteVersion",
-				"value": "",
-				"style": ""
-			},
-			{
 				"comment": "Add popout items above.",
 				"display": false
 			}
 		]
 	},
-	"ConfigVersion" : "1"
+	"MachineID" : "XX_MACHINEID_XX",
+	"ConfigVersion" : 2
 }
