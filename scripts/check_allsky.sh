@@ -83,14 +83,15 @@ done
 [[ ${HELP} == "true" ]] && usage_and_exit 0
 [[ ${OK} == "false" ]] && usage_and_exit 1
 
-BRANCH="$( get_branch "" )"
-[[ -z ${BRANCH} ]] && BRANCH="${GITHUB_MAIN_BRANCH}"
-[[ ${DEBUG} == "true" ]] && echo "DEBUG: using '${BRANCH}' branch."
 
 # Unless forced to, only do the version check if we're on the main branch,
 # not on development branches, because when we're updating this script we
 # don't want to have the updates overwritten from an older version on GitHub.
 if [[ ${FORCE_CHECK} == "true" ]]; then
+	BRANCH="$( get_branch "" )"
+	[[ -z ${BRANCH} ]] && BRANCH="${GITHUB_MAIN_BRANCH}"
+	[[ ${DEBUG} == "true" ]] && echo "DEBUG: using '${BRANCH}' branch."
+
 	CURRENT_SCRIPT="${ALLSKY_SCRIPTS}/${ME}"
 	if [[ -n ${NEWER} ]]; then
 		# This is a newer version
@@ -669,11 +670,6 @@ fi
 	##### If these variables are set, their corresponding directory should exist.
 	check_exists "UHUBCTL_PATH"
 
-	##### Check for Allsky Website-related issues.
-	if [[ -f ${ALLSKY_REMOTE_WEBSITE_CONFIGURATION_FILE} && (${PROTOCOL} == "" || ${PROTOCOL} == "local") ]]; then
-		heading "Warnings"
-		echo "A remote Allsky Website configuration file was found but PROTOCOL doesn't support uploading files."
-	fi
 fi		# end of checking for warning items
 
 
@@ -686,7 +682,8 @@ if [[ ${CHECK_ERRORS} == "true" ]]; then
 
 	# Settings used in this section.
 	USING_DARKS="$( get_setting ".usedarkframes" )"
-	IMG_UPLOAD_ORIGINAL_NAME="$( get_setting ".imageuploadoriginalname" )"
+	REMOTE_WEBSITE_IMG_UPLOAD_ORIGINAL_NAME="$( get_setting ".remotewebsiteimageuploadoriginalname" )"
+	REMOTE_SERVER_IMG_UPLOAD_ORIGINAL_NAME="$( get_setting ".remoteserverimageuploadoriginalname" )"
 	IMG_CREATE_THUMBNAILS="$( get_setting ".imagecreatethumbnails" )"
 	TIMELAPSE_MINI_FORCE_CREATION="$( get_setting ".minitimelapseforcecreation" )"
 	# shellcheck disable=SC2034
@@ -710,14 +707,15 @@ if [[ ${CHECK_ERRORS} == "true" ]]; then
 		local NAME="${2}"
 		if [[ ${B,,} != "true" && ${B,,} != "false" ]]; then
 			heading "Errors"
-			echo "'${NAME}' must be either 'true' or 'false'."
+			echo "'${NAME}' must be either 'true' or 'false'; it is '${B}'."
 		fi
 	}
 
 	##### Make sure these booleans have boolean values.
 		# TODO: use options.json to determine which are type=boolean.
 	check_bool "${USING_DARKS}" "Use Dark Frames"
-	check_bool "${IMG_UPLOAD_ORIGINAL_NAME}" "Upload With Original Name"
+	check_bool "${REMOTE_WEBSITE_IMG_UPLOAD_ORIGINAL_NAME}" "Upload With Original Name - Remote Website"
+	check_bool "${REMOTE_SERVER_IMG_UPLOAD_ORIGINAL_NAME}" "Upload With Original Name - Remote Server"
 	check_bool "${IMG_CREATE_THUMBNAILS}" "Create Image Thumbnails"
 	check_bool "${TIMELAPSE}" "Generate Timelapse"
 	check_bool "${UPLOAD_VIDEO}" "Upload Timelapse"
