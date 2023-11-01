@@ -226,10 +226,13 @@ function check_remote_server()
 
 	local TYPE="${1}"
 	local TYPE_STRING
+	local CONFIG_FILE
 	if [[ ${TYPE} == "REMOTEWEBSITE" ]]; then
 		TYPE_STRING="Remote Website"
+		CONFIG_FILE="${ALLSKY_WEBSITE_CONFIGURATION_FILE}"
 	else
 		TYPE_STRING="Remote Server"
+		CONFIG_FILE="${ALLSKY_REMOTE_WEBSITE_CONFIGURATION_FILE}"
 	fi
 
 	local USE="$( settings ".use${TYPE,,}" )"
@@ -302,6 +305,12 @@ function check_remote_server()
 	if [[ -n ${REMOTE_PORT} ]] && ! is_number "${REMOTE_PORT}" ; then
 		echo "${TYPE}_PORT (${REMOTE_PORT}) must be a number."
 		echo "Uploads will not work until this is corrected."
+		RET=1
+	fi
+
+	if [[ ! -f ${CONFIG_FILE} ]]; then
+		echo "'Use ${TYPE_STRING}' is enabled but no corresponding configuration file found."
+		echo "Missing '${CONFIG_FILE}'."
 		RET=1
 	fi
 
