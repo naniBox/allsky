@@ -1,0 +1,11 @@
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Collecting skyfield
+  Downloading https://www.piwheels.org/simple/skyfield/skyfield-1.46-py3-none-any.whl (446 kB)
+Collecting jplephem>=2.13
+  Downloading https://www.piwheels.org/simple/jplephem/jplephem-2.19-py3-none-any.whl (47 kB)
+Collecting sgp4>=2.2
+  Downloading sgp4-2.22-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (232 kB)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/lib/python3/dist-packages (from skyfield->-r /tmp/package (line 1)) (2020.6.20)
+Requirement already satisfied: numpy in /home/talsit/.local/lib/python3.9/site-packages (from skyfield->-r /tmp/package (line 1)) (1.26.1)
+Installing collected packages: sgp4, jplephem, skyfield
+Successfully installed jplephem-2.19 sgp4-2.22 skyfield-1.46

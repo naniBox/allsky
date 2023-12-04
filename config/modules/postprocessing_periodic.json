@@ -1,0 +1,66 @@
+{
+    "pistatus": {
+        "module": "allsky_pistatus.py",
+        "metadata": {
+            "name": "Reads Pi Status",
+            "description": "Reads Pi Data",
+            "module": "allsky_pistatus",
+            "version": "v1.0.0",
+            "events": {
+                "0": "periodic"
+            },
+            "experimental": false,
+            "arguments": {
+                "period": "60"
+            },
+            "argumentdetails": {
+                "period": {
+                    "required": "true",
+                    "description": "Read Every",
+                    "help": "Reads data every x seconds.",
+                    "type": {
+                        "fieldtype": "spinner",
+                        "min": 60,
+                        "max": 1440,
+                        "step": 1
+                    }
+                }
+            },
+            "enabled": "false"
+        },
+        "type": "system",
+        "enabled": true,
+        "lastexecutiontime": "0.193961",
+        "lastexecutionresult": "PI Status Data Written"
+    },
+    "script": {
+        "module": "allsky_script.py",
+        "metadata": {
+            "name": "AllSKY Script",
+            "description": "Runs a custom script",
+            "events": {
+                "0": "day",
+                "1": "night",
+                "2": "endofnight",
+                "3": "daynight",
+                "4": "nightday",
+                "5": "periodic"
+            },
+            "arguments": {
+                "scriptlocation": "/home/talsit/sync_files.sh"
+            },
+            "argumentdetails": {
+                "scriptlocation": {
+                    "required": "true",
+                    "description": "File Location",
+                    "help": "The location of the script to run"
+                }
+            },
+            "experimental": false
+        },
+        "type": "system",
+        "enabled": true,
+        "lastexecutiontime": "2.703182",
+        "lastexecutionresult": "Script /home/talsit/sync_files.sh Executed."
+    }
+}

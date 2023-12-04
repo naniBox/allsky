@@ -1,0 +1,181 @@
+Hit:1 http://security.debian.org/debian-security bullseye-security InRelease
+Hit:2 http://deb.debian.org/debian bullseye InRelease
+Hit:3 http://deb.debian.org/debian bullseye-updates InRelease
+Hit:4 http://download.zerotier.com/debian/bullseye bullseye InRelease
+Hit:5 http://archive.raspberrypi.org/debian bullseye InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+avahi-daemon is already the newest version (0.8-5+deb11u2).
+The following additional packages will be installed:
+  libsodium23 lighttpd-mod-deflate lighttpd-mod-openssl php-common php7.4-cgi
+  php7.4-cli php7.4-common php7.4-gd php7.4-json php7.4-opcache
+  php7.4-readline spawn-fcgi
+Suggested packages:
+  rrdtool php-fpm apache2-utils lighttpd-doc lighttpd-mod-authn-gssapi
+  lighttpd-mod-authn-pam lighttpd-mod-authn-sasl lighttpd-mod-geoip
+  lighttpd-mod-maxminddb lighttpd-mod-trigger-b4-dl lighttpd-mod-vhostdb-pgsql
+  lighttpd-mod-webdav lighttpd-modules-dbi lighttpd-modules-ldap
+  lighttpd-modules-lua lighttpd-modules-mysql php-pear
+The following NEW packages will be installed:
+  dnsmasq hostapd libsodium23 lighttpd lighttpd-mod-deflate
+  lighttpd-mod-openssl php-cgi php-common php-gd php7.4-cgi php7.4-cli
+  php7.4-common php7.4-gd php7.4-json php7.4-opcache php7.4-readline
+  spawn-fcgi
+0 upgraded, 17 newly installed, 0 to remove and 0 not upgraded.
+Need to get 5,124 kB of archives.
+After this operation, 26.3 MB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian bullseye/main arm64 hostapd arm64 2:2.9.0-21 [764 kB]
+Get:2 http://deb.debian.org/debian bullseye/main arm64 lighttpd arm64 1.4.59-1+deb11u2 [337 kB]
+Get:3 http://deb.debian.org/debian bullseye/main arm64 dnsmasq all 2.85-1 [32.0 kB]
+Get:4 http://deb.debian.org/debian bullseye/main arm64 libsodium23 arm64 1.0.18-1 [119 kB]
+Get:5 http://deb.debian.org/debian bullseye/main arm64 lighttpd-mod-deflate arm64 1.4.59-1+deb11u2 [9,012 B]
+Get:6 http://deb.debian.org/debian bullseye/main arm64 lighttpd-mod-openssl arm64 1.4.59-1+deb11u2 [17.8 kB]
+Get:7 http://deb.debian.org/debian bullseye/main arm64 php-common all 2:76 [15.6 kB]
+Get:8 http://deb.debian.org/debian bullseye/main arm64 php7.4-common arm64 7.4.33-1+deb11u4 [999 kB]
+Get:9 http://deb.debian.org/debian bullseye/main arm64 php7.4-json arm64 7.4.33-1+deb11u4 [18.2 kB]
+Get:10 http://deb.debian.org/debian bullseye/main arm64 php7.4-opcache arm64 7.4.33-1+deb11u4 [179 kB]
+Get:11 http://deb.debian.org/debian bullseye/main arm64 php7.4-readline arm64 7.4.33-1+deb11u4 [11.6 kB]
+Get:12 http://deb.debian.org/debian bullseye/main arm64 php7.4-cli arm64 7.4.33-1+deb11u4 [1,302 kB]
+Get:13 http://deb.debian.org/debian bullseye/main arm64 php7.4-cgi arm64 7.4.33-1+deb11u4 [1,266 kB]
+Get:14 http://deb.debian.org/debian bullseye/main arm64 php-cgi all 2:7.4+76 [6,852 B]
+Get:15 http://deb.debian.org/debian bullseye/main arm64 php7.4-gd arm64 7.4.33-1+deb11u4 [26.7 kB]
+Get:16 http://deb.debian.org/debian bullseye/main arm64 php-gd all 2:7.4+76 [6,360 B]
+Get:17 http://deb.debian.org/debian bullseye/main arm64 spawn-fcgi arm64 1.6.4-2 [14.1 kB]
+Fetched 5,124 kB in 1s (9,088 kB/s)
+Selecting previously unselected package hostapd.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 40756 files and directories currently installed.)
+Preparing to unpack .../00-hostapd_2%3a2.9.0-21_arm64.deb ...
+Unpacking hostapd (2:2.9.0-21) ...
+Selecting previously unselected package lighttpd.
+Preparing to unpack .../01-lighttpd_1.4.59-1+deb11u2_arm64.deb ...
+Unpacking lighttpd (1.4.59-1+deb11u2) ...
+Selecting previously unselected package dnsmasq.
+Preparing to unpack .../02-dnsmasq_2.85-1_all.deb ...
+Unpacking dnsmasq (2.85-1) ...
+Selecting previously unselected package libsodium23:arm64.
+Preparing to unpack .../03-libsodium23_1.0.18-1_arm64.deb ...
+Unpacking libsodium23:arm64 (1.0.18-1) ...
+Selecting previously unselected package lighttpd-mod-deflate.
+Preparing to unpack .../04-lighttpd-mod-deflate_1.4.59-1+deb11u2_arm64.deb ...
+Unpacking lighttpd-mod-deflate (1.4.59-1+deb11u2) ...
+Selecting previously unselected package lighttpd-mod-openssl.
+Preparing to unpack .../05-lighttpd-mod-openssl_1.4.59-1+deb11u2_arm64.deb ...
+Unpacking lighttpd-mod-openssl (1.4.59-1+deb11u2) ...
+Selecting previously unselected package php-common.
+Preparing to unpack .../06-php-common_2%3a76_all.deb ...
+Unpacking php-common (2:76) ...
+Selecting previously unselected package php7.4-common.
+Preparing to unpack .../07-php7.4-common_7.4.33-1+deb11u4_arm64.deb ...
+Unpacking php7.4-common (7.4.33-1+deb11u4) ...
+Selecting previously unselected package php7.4-json.
+Preparing to unpack .../08-php7.4-json_7.4.33-1+deb11u4_arm64.deb ...
+Unpacking php7.4-json (7.4.33-1+deb11u4) ...
+Selecting previously unselected package php7.4-opcache.
+Preparing to unpack .../09-php7.4-opcache_7.4.33-1+deb11u4_arm64.deb ...
+Unpacking php7.4-opcache (7.4.33-1+deb11u4) ...
+Selecting previously unselected package php7.4-readline.
+Preparing to unpack .../10-php7.4-readline_7.4.33-1+deb11u4_arm64.deb ...
+Unpacking php7.4-readline (7.4.33-1+deb11u4) ...
+Selecting previously unselected package php7.4-cli.
+Preparing to unpack .../11-php7.4-cli_7.4.33-1+deb11u4_arm64.deb ...
+Unpacking php7.4-cli (7.4.33-1+deb11u4) ...
+Selecting previously unselected package php7.4-cgi.
+Preparing to unpack .../12-php7.4-cgi_7.4.33-1+deb11u4_arm64.deb ...
+Unpacking php7.4-cgi (7.4.33-1+deb11u4) ...
+Selecting previously unselected package php-cgi.
+Preparing to unpack .../13-php-cgi_2%3a7.4+76_all.deb ...
+Unpacking php-cgi (2:7.4+76) ...
+Selecting previously unselected package php7.4-gd.
+Preparing to unpack .../14-php7.4-gd_7.4.33-1+deb11u4_arm64.deb ...
+Unpacking php7.4-gd (7.4.33-1+deb11u4) ...
+Selecting previously unselected package php-gd.
+Preparing to unpack .../15-php-gd_2%3a7.4+76_all.deb ...
+Unpacking php-gd (2:7.4+76) ...
+Selecting previously unselected package spawn-fcgi.
+Preparing to unpack .../16-spawn-fcgi_1.6.4-2_arm64.deb ...
+Unpacking spawn-fcgi (1.6.4-2) ...
+Setting up lighttpd (1.4.59-1+deb11u2) ...
+Enabling unconfigured: ok
+Run "service lighttpd force-reload" to enable changes
+Created symlink /etc/systemd/system/multi-user.target.wants/lighttpd.service → /lib/systemd/system/lighttpd.service.
+Setting up php-common (2:76) ...
+Created symlink /etc/systemd/system/timers.target.wants/phpsessionclean.timer → /lib/systemd/system/phpsessionclean.timer.
+Setting up lighttpd-mod-openssl (1.4.59-1+deb11u2) ...
+Setting up libsodium23:arm64 (1.0.18-1) ...
+Setting up php7.4-common (7.4.33-1+deb11u4) ...
+
+Creating config file /etc/php/7.4/mods-available/calendar.ini with new version
+
+Creating config file /etc/php/7.4/mods-available/ctype.ini with new version
+
+Creating config file /etc/php/7.4/mods-available/exif.ini with new version
+
+Creating config file /etc/php/7.4/mods-available/fileinfo.ini with new version
+
+Creating config file /etc/php/7.4/mods-available/ffi.ini with new version
+
+Creating config file /etc/php/7.4/mods-available/ftp.ini with new version
+
+Creating config file /etc/php/7.4/mods-available/gettext.ini with new version
+
+Creating config file /etc/php/7.4/mods-available/iconv.ini with new version
+
+Creating config file /etc/php/7.4/mods-available/pdo.ini with new version
+
+Creating config file /etc/php/7.4/mods-available/phar.ini with new version
+
+Creating config file /etc/php/7.4/mods-available/posix.ini with new version
+
+Creating config file /etc/php/7.4/mods-available/shmop.ini with new version
+
+Creating config file /etc/php/7.4/mods-available/sockets.ini with new version
+
+Creating config file /etc/php/7.4/mods-available/sysvmsg.ini with new version
+
+Creating config file /etc/php/7.4/mods-available/sysvsem.ini with new version
+
+Creating config file /etc/php/7.4/mods-available/sysvshm.ini with new version
+
+Creating config file /etc/php/7.4/mods-available/tokenizer.ini with new version
+Setting up php7.4-readline (7.4.33-1+deb11u4) ...
+
+Creating config file /etc/php/7.4/mods-available/readline.ini with new version
+Setting up dnsmasq (2.85-1) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/dnsmasq.service → /lib/systemd/system/dnsmasq.service.
+Setting up hostapd (2:2.9.0-21) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/hostapd.service → /lib/systemd/system/hostapd.service.
+Job for hostapd.service failed because the control process exited with error code.
+See "systemctl status hostapd.service" and "journalctl -xe" for details.
+Created symlink /etc/systemd/system/hostapd.service → /dev/null.
+Setting up php7.4-opcache (7.4.33-1+deb11u4) ...
+
+Creating config file /etc/php/7.4/mods-available/opcache.ini with new version
+Setting up spawn-fcgi (1.6.4-2) ...
+Setting up php7.4-gd (7.4.33-1+deb11u4) ...
+
+Creating config file /etc/php/7.4/mods-available/gd.ini with new version
+Setting up lighttpd-mod-deflate (1.4.59-1+deb11u2) ...
+Setting up php7.4-json (7.4.33-1+deb11u4) ...
+
+Creating config file /etc/php/7.4/mods-available/json.ini with new version
+Setting up php7.4-cli (7.4.33-1+deb11u4) ...
+update-alternatives: using /usr/bin/php7.4 to provide /usr/bin/php (php) in auto mode
+update-alternatives: using /usr/bin/phar7.4 to provide /usr/bin/phar (phar) in auto mode
+update-alternatives: using /usr/bin/phar.phar7.4 to provide /usr/bin/phar.phar (phar.phar) in auto mode
+
+Creating config file /etc/php/7.4/cli/php.ini with new version
+Setting up php-gd (2:7.4+76) ...
+Setting up php7.4-cgi (7.4.33-1+deb11u4) ...
+update-alternatives: using /usr/bin/php-cgi7.4 to provide /usr/bin/php-cgi (php-cgi) in auto mode
+update-alternatives: using /usr/lib/cgi-bin/php7.4 to provide /usr/lib/cgi-bin/php (php-cgi-bin) in auto mode
+
+Creating config file /etc/php/7.4/cgi/php.ini with new version
+Setting up php-cgi (2:7.4+76) ...
+update-alternatives: using /usr/bin/php-cgi.default to provide /usr/bin/php-cgi (php-cgi) in auto mode
+update-alternatives: using /usr/lib/cgi-bin/php.default to provide /usr/lib/cgi-bin/php (php-cgi-bin) in auto mode
+Processing triggers for man-db (2.9.4-2) ...
+Processing triggers for libc-bin (2.31-13+rpt2+rpi1+deb11u7) ...
+Processing triggers for php7.4-cli (7.4.33-1+deb11u4) ...
+Processing triggers for php7.4-cgi (7.4.33-1+deb11u4) ...

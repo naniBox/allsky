@@ -1,0 +1,6 @@
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Requirement already satisfied: astropy in /home/talsit/.local/lib/python3.9/site-packages (from -r /tmp/package (line 1)) (5.3.4)
+Requirement already satisfied: numpy<2,>=1.21 in /home/talsit/.local/lib/python3.9/site-packages (from astropy->-r /tmp/package (line 1)) (1.24.4)
+Requirement already satisfied: pyerfa>=2.0 in /home/talsit/.local/lib/python3.9/site-packages (from astropy->-r /tmp/package (line 1)) (2.0.1.1)
+Requirement already satisfied: PyYAML>=3.13 in /home/talsit/.local/lib/python3.9/site-packages (from astropy->-r /tmp/package (line 1)) (6.0.1)
+Requirement already satisfied: packaging>=19.0 in /home/talsit/.local/lib/python3.9/site-packages (from astropy->-r /tmp/package (line 1)) (23.2)

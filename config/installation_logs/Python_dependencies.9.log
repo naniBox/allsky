@@ -1,0 +1,20 @@
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Collecting scikit-image<=0.19.3
+  Downloading scikit_image-0.19.3-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (13.5 MB)
+Requirement already satisfied: scipy>=1.4.1 in /home/talsit/.local/lib/python3.9/site-packages (from scikit-image<=0.19.3->-r /tmp/package (line 1)) (1.8.1)
+Requirement already satisfied: pillow!=7.1.0,!=7.1.1,!=8.3.0,>=6.1.0 in /usr/lib/python3/dist-packages (from scikit-image<=0.19.3->-r /tmp/package (line 1)) (8.1.2)
+Collecting networkx>=2.2
+  Downloading https://www.piwheels.org/simple/networkx/networkx-3.2.1-py3-none-any.whl (1.6 MB)
+Collecting packaging>=20.0
+  Downloading https://www.piwheels.org/simple/packaging/packaging-23.2-py3-none-any.whl (53 kB)
+Collecting tifffile>=2019.7.26
+  Downloading https://www.piwheels.org/simple/tifffile/tifffile-2023.9.26-py3-none-any.whl (222 kB)
+Requirement already satisfied: numpy>=1.17.0 in /home/talsit/.local/lib/python3.9/site-packages (from scikit-image<=0.19.3->-r /tmp/package (line 1)) (1.24.4)
+Collecting PyWavelets>=1.1.1
+  Downloading PyWavelets-1.4.1-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (6.8 MB)
+Collecting imageio>=2.4.1
+  Downloading https://www.piwheels.org/simple/imageio/imageio-2.32.0-py3-none-any.whl (313 kB)
+Collecting pillow!=7.1.0,!=7.1.1,!=8.3.0,>=6.1.0
+  Downloading Pillow-10.0.1-cp39-cp39-manylinux_2_28_aarch64.whl (3.5 MB)
+Installing collected packages: pillow, tifffile, PyWavelets, packaging, networkx, imageio, scikit-image
+Successfully installed PyWavelets-1.4.1 imageio-2.32.0 networkx-3.2.1 packaging-23.2 pillow-10.0.1 scikit-image-0.19.3 tifffile-2023.9.26

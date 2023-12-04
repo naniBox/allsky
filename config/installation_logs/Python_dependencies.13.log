@@ -1,0 +1,6 @@
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Collecting suncalc
+  Downloading https://www.piwheels.org/simple/suncalc/suncalc-0.1.3-py3-none-any.whl (10 kB)
+Requirement already satisfied: numpy in /home/talsit/.local/lib/python3.9/site-packages (from suncalc->-r /tmp/package (line 1)) (1.24.4)
+Installing collected packages: suncalc
+Successfully installed suncalc-0.1.3

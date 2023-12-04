@@ -1,0 +1,34 @@
+{
+    "pistatus": {
+        "module": "allsky_pistatus.py",
+        "metadata": {
+            "name": "Reads Pi Status",
+            "description": "Reads Pi Data",
+            "module": "allsky_pistatus",
+            "version": "v1.0.0",
+            "events": {
+                "0": "periodic"
+            },
+            "experimental": false,
+            "arguments": {
+                "period": "60"
+            },
+            "argumentdetails": {
+                "period": {
+                    "required": "true",
+                    "description": "Read Every",
+                    "help": "Reads data every x seconds.",
+                    "type": {
+                        "fieldtype": "spinner",
+                        "min": 60,
+                        "max": 1440,
+                        "step": 1
+                    }
+                }
+            },
+            "enabled": "false"
+        },
+        "type": "system",
+        "enabled": true
+    }
+}

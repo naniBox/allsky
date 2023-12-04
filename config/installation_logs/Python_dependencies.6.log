@@ -1,0 +1,5 @@
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Collecting astral
+  Downloading https://www.piwheels.org/simple/astral/astral-3.2-py3-none-any.whl (38 kB)
+Installing collected packages: astral
+Successfully installed astral-3.2

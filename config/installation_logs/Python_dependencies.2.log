@@ -1,0 +1,6 @@
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Collecting opencv-python<=4.6.0.66
+  Downloading opencv_python-4.6.0.66-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (39.5 MB)
+Requirement already satisfied: numpy>=1.19.3 in /home/talsit/.local/lib/python3.9/site-packages (from opencv-python<=4.6.0.66->-r /tmp/package (line 1)) (1.26.1)
+Installing collected packages: opencv-python
+Successfully installed opencv-python-4.6.0.66

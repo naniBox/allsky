@@ -1,0 +1,38 @@
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Collecting Adafruit-Blinka
+  Downloading https://www.piwheels.org/simple/adafruit-blinka/Adafruit_Blinka-8.24.0-py3-none-any.whl (312 kB)
+Collecting Adafruit-PlatformDetect>=3.53.0
+  Downloading https://www.piwheels.org/simple/adafruit-platformdetect/Adafruit_PlatformDetect-3.53.0-py3-none-any.whl (23 kB)
+Collecting rpi-ws281x>=4.0.0
+  Downloading rpi_ws281x-5.0.0.tar.gz (64 kB)
+Collecting Adafruit-PureIO>=1.1.7
+  Downloading https://www.piwheels.org/simple/adafruit-pureio/Adafruit_PureIO-1.1.11-py3-none-any.whl (10 kB)
+Requirement already satisfied: RPi.GPIO in /usr/lib/python3/dist-packages (from Adafruit-Blinka->-r /tmp/package (line 1)) (0.7.0)
+Collecting adafruit-circuitpython-typing
+  Downloading https://www.piwheels.org/simple/adafruit-circuitpython-typing/adafruit_circuitpython_typing-1.9.5-py3-none-any.whl (10 kB)
+Collecting sysv-ipc>=1.1.0
+  Downloading sysv_ipc-1.1.0.tar.gz (99 kB)
+Collecting pyftdi>=0.40.0
+  Downloading https://www.piwheels.org/simple/pyftdi/pyftdi-0.55.0-py3-none-any.whl (145 kB)
+Collecting pyserial>=3.0
+  Downloading https://www.piwheels.org/simple/pyserial/pyserial-3.5-py2.py3-none-any.whl (90 kB)
+Collecting pyusb!=1.2.0,>=1.0.0
+  Downloading https://www.piwheels.org/simple/pyusb/pyusb-1.2.1-py3-none-any.whl (58 kB)
+Collecting typing-extensions~=4.0
+  Using cached https://www.piwheels.org/simple/typing-extensions/typing_extensions-4.8.0-py3-none-any.whl (31 kB)
+Collecting adafruit-circuitpython-busdevice
+  Downloading https://www.piwheels.org/simple/adafruit-circuitpython-busdevice/adafruit_circuitpython_busdevice-5.2.6-py3-none-any.whl (7.5 kB)
+Collecting adafruit-circuitpython-requests
+  Downloading https://www.piwheels.org/simple/adafruit-circuitpython-requests/adafruit_circuitpython_requests-2.0.2-py3-none-any.whl (11 kB)
+Building wheels for collected packages: rpi-ws281x, sysv-ipc
+  Building wheel for rpi-ws281x (setup.py): started
+  Building wheel for rpi-ws281x (setup.py): finished with status 'done'
+  Created wheel for rpi-ws281x: filename=rpi_ws281x-5.0.0-cp39-cp39-linux_aarch64.whl size=125998 sha256=826c9e0fd3c4d7877ae55cfa5e29e0ca9b97f6358d4c687378cc18c8a6bc0523
+  Stored in directory: /home/talsit/.cache/pip/wheels/ad/58/49/123e562899645d5bd2c123fdc8af1564c0c38cbb5bebeda859
+  Building wheel for sysv-ipc (setup.py): started
+  Building wheel for sysv-ipc (setup.py): finished with status 'done'
+  Created wheel for sysv-ipc: filename=sysv_ipc-1.1.0-cp39-cp39-linux_aarch64.whl size=65881 sha256=325df010e70b465097fe4f10266783b8394ec3fac06890da9a08cf9d846e1d50
+  Stored in directory: /home/talsit/.cache/pip/wheels/37/7f/8b/b3a69bb6cc69f370d4264547e56d7117a8472e5e691c8b8e11
+Successfully built rpi-ws281x sysv-ipc
+Installing collected packages: typing-extensions, pyusb, pyserial, adafruit-circuitpython-requests, adafruit-circuitpython-busdevice, sysv-ipc, rpi-ws281x, pyftdi, Adafruit-PureIO, Adafruit-PlatformDetect, adafruit-circuitpython-typing, Adafruit-Blinka
+Successfully installed Adafruit-Blinka-8.24.0 Adafruit-PlatformDetect-3.53.0 Adafruit-PureIO-1.1.11 adafruit-circuitpython-busdevice-5.2.6 adafruit-circuitpython-requests-2.0.2 adafruit-circuitpython-typing-1.9.5 pyftdi-0.55.0 pyserial-3.5 pyusb-1.2.1 rpi-ws281x-5.0.0 sysv-ipc-1.1.0 typing-extensions-4.8.0

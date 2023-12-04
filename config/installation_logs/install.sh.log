@@ -1,0 +1,74 @@
+* STARTING INSTALLATON AT Fri 10 Nov 13:21:29 AEDT 2023.
+
+* No prior Allsky found.
+* RPi camera found.
+* Using the 'master' branch.
+* Displaying notification image 'InstallationInProgress.jpg'
+* CURRENT_LOCALE=en_GB.UTF-8, TEMP_LOCALE=[[LANG=en_GB.UTF-8 ]]
+* No locale selected; exiting.
+
+* ENDING INSTALLATON AT Fri 10 Nov 13:21:43 AEDT 2023.
+
+* STARTING INSTALLATON AT Fri 10 Nov 2023 11:29:29 JST.
+
+* Restarting installation.
+* No prior Allsky found.
+* RPi camera found.
+* Using the 'master' branch.
+* Displaying notification image 'InstallationInProgress.jpg'
+* CURRENT_LOCALE=en_AU.UTF-8, TEMP_LOCALE=[[LANG=en_AU.UTF-8 ]]
+* Using RPi camera.
+* Using current hostname of 'skycam0'.
+* RAM_SIZE=2048, SUGGESTED_SWAP_SIZE=2048.
+* Setting swap space to 2048 MB.
+* /home/talsit/allsky/tmp is now in memory.
+* Installing the web server.
+* Installing dependencies.
+* Preparing Allsky commands.
+* Modifying locations for WebUI.
+* Setting up WebUI options and default settings for RPi cameras.
+* Making new settings file '/home/talsit/allsky/config/settings.json'.
+* Executing makeChanges.sh --force --cameraTypeOnly   'cameraType' 'Camera Type' '' 'RPi'
+* Settings files:
+    -rw-r--r-- 2 talsit talsit 1981 Nov 10 11:35 /home/talsit/allsky/config/settings.json
+    -rw-r--r-- 2 talsit talsit 1981 Nov 10 11:35 /home/talsit/allsky/config/settings_RPi_HQ.json
+* Keeping 'en_AU.UTF-8' locale.
+* Settings file '/home/talsit/allsky/config/settings.json' did NOT contain .locale so adding it.
+* Settings files now:
+    -rw-r--r-- 2 talsit talsit 1992 Nov 10 11:35 /home/talsit/allsky/config/settings.json
+    -rw-r--r-- 2 talsit talsit 1992 Nov 10 11:35 /home/talsit/allsky/config/settings_RPi_HQ.json
+* Setting permissions on /var/log/allsky.log and /var/log/allskyperiodic.log.
+* Installing PHP modules.
+* Installing other PHP dependencies.
+* Installing Python_dependencies:
+*    === Package #  1 of 15: [numpy>=1.25.0]
+*    === Package #  2 of 15: [opencv-python<=4.6.0.66]
+*    === Package #  3 of 15: [Pillow]
+*    === Package #  4 of 15: [pyephem]
+*    === Package #  5 of 15: [skyfield]
+*    === Package #  6 of 15: [astral]
+*    === Package #  7 of 15: [pytz]
+*    === Package #  8 of 15: [scipy<=1.8.1]
+*    === Package #  9 of 15: [scikit-image<=0.19.3]
+*    === Package # 10 of 15: [paho-mqtt]
+*    === Package # 11 of 15: [photutils]
+*    === Package # 12 of 15: [astropy]
+*    === Package # 13 of 15: [suncalc]
+*    === Package # 14 of 15: [Adafruit-Blinka]
+*    === Package # 15 of 15: [vcgencmd]
+* Installing Trutype fonts.
+* Setting up modules and overlays.
+* Copying '/home/talsit/allsky/config/overlay/config/overlay-RPi.json' to 'overlay.json'.
+* Prompting for Latitude and Longitude.
+* Latitude set to 34.750223805824N.
+* Longitude set to 135.36047694453276E.
+* Updating some '/home/talsit/allsky/config/config.sh' variables.
+* Setting permissions on web-related files.
+* Adding talsit to www-data group.
+* Creating/updating sudoers file.
+* Pi will reboot after installation completes.
+* Displaying notification image 'ConfigurationNeeded.jpg'
+* Added message about running 'check_allsky.sh'.
+
+* ENDING INSTALLATON AT Fri 10 Nov 2023 12:04:24 JST.
+

@@ -1,5 +1,6 @@
 images/*
 darks/*
+tmp/*
 scripts/endOfNight_additionalSteps.sh
 
 # development artifacts
@@ -9,10 +10,12 @@ src/*.a
 *.gcda
 gmon.out
 .*.sw[pomnq]
+__pycache__
 
 # generated binaries
 capture_ZWO
 capture_RPiHQ
+capture_RPi
 keogram
 startrails
 sunwait

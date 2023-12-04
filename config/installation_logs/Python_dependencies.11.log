@@ -1,0 +1,27 @@
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Collecting photutils
+  Downloading photutils-1.9.0.tar.gz (1.1 MB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+    Preparing wheel metadata: started
+    Preparing wheel metadata: finished with status 'done'
+Collecting astropy>=5.0
+  Downloading astropy-5.3.4-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (10.2 MB)
+Requirement already satisfied: numpy>=1.22 in /home/talsit/.local/lib/python3.9/site-packages (from photutils->-r /tmp/package (line 1)) (1.24.4)
+Collecting PyYAML>=3.13
+  Downloading PyYAML-6.0.1-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (731 kB)
+Requirement already satisfied: packaging>=19.0 in /home/talsit/.local/lib/python3.9/site-packages (from astropy>=5.0->photutils->-r /tmp/package (line 1)) (23.2)
+Collecting pyerfa>=2.0
+  Downloading pyerfa-2.0.1.1-cp39-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (693 kB)
+Building wheels for collected packages: photutils
+  Building wheel for photutils (PEP 517): started
+  Building wheel for photutils (PEP 517): finished with status 'done'
+  Created wheel for photutils: filename=photutils-1.9.0-cp39-cp39-linux_aarch64.whl size=968249 sha256=808f26d38b3de379948783021336c55201e44880dcd4db61669e4da95fcc422d
+  Stored in directory: /home/talsit/.cache/pip/wheels/df/9a/0a/cdbf5d275604aa5ccecb9285ccef9a07be297f12aa29c50919
+Successfully built photutils
+Installing collected packages: PyYAML, pyerfa, astropy, photutils
+Successfully installed PyYAML-6.0.1 astropy-5.3.4 photutils-1.9.0 pyerfa-2.0.1.1

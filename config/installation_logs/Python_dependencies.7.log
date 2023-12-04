@@ -1,0 +1,5 @@
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Collecting pytz
+  Downloading https://www.piwheels.org/simple/pytz/pytz-2023.3.post1-py3-none-any.whl (502 kB)
+Installing collected packages: pytz
+Successfully installed pytz-2023.3.post1
